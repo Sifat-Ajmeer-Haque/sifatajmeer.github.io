@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sifat Ajmeer Haque | Academic Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-light: #f9fafb;
+      --bg-dark: #0f172a;
+      --text-light: #0f172a;
+      --text-dark: #f8fafc;
+      --accent: #3b82f6;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background: var(--bg-light);
+      color: var(--text-light);
+      transition: all 0.3s ease;
+    }
+    body.dark {
+      background: var(--bg-dark);
+      color: var(--text-dark);
+    }
+    header {
+      background: #1e293b;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.1rem;
+      color: #cbd5e1;
+    }
+    nav {
+      background: #0f172a;
+      padding: 0.8rem 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .menu-toggle {
+      display: none;
+      font-size: 1.6rem;
+      color: white;
+      background: none;
+      border: none;
+    }
+    .section {
+      max-width: 900px;
+      margin: 1rem auto;
+      background: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+    }
+    body.dark .section {
+      background: #1e293b;
+    }
+    h2 {
+      color: var(--accent);
+      margin-top: 0;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    .research-item {
+      margin-bottom: 1rem;
+    }
+    .research-item a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+      color: #64748b;
+    }
+    footer a {
+      color: var(--accent);
+      margin: 0 0.5rem;
+    }
+    .dark-toggle {
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      color: white;
+      cursor: pointer;
+    }
+    @media (max-width: 600px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 0.5rem;
+      }
+      .nav-links.show {
+        display: flex;
+      }
+      .menu-toggle {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Sifat Ajmeer Haque</h1>
+  <p>Researcher in Industry 4.0 • Smart Manufacturing • Data-Driven Operations</p>
+</header>
+
+<nav>
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  <div class="nav-links" id="navLinks">
+    <a href="#about">About</a>
+    <a href="#research">Research</a>
+    <a href="#education">Education</a>
+    <a href="#experience">Experience</a>
+    <a href="#activities">Activities</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <button class="dark-toggle" onclick="toggleDark()">🌙</button>
+</nav>
+
+<section id="about" class="section">
+  <h2>About Me</h2>
+  <p>I am a research enthusiast dedicated to transforming industrial operations through cutting-edge technologies. My core interests include Smart Manufacturing, Sustainable Operations, AI integration, and Industry 4.0. I aim to address adoption barriers and advance supply chain resilience and agile decision-making for future-ready industries.</p>
+</section>
+
+<section id="research" class="section">
+  <h2>Research & Publications</h2>
+  <p><strong>Total Publications:</strong> 5<br><strong>Total Citations:</strong> 6</p>
+  <div class="research-item">
+    <strong>1.</strong> <a href="https://doi.org/10.1108/TQM-08-2023-0247" target="_blank">Barriers to TQM Implementation in SMEs in Bangladesh</a><br>
+    <em>The TQM Journal, 2023</em>
+  </div>
+  <div class="research-item">
+    <strong>2.</strong> <a href="https://doi.org/10.1108/BIJ-06-2023-0371" target="_blank">Identification and prioritization of barriers to Industry 4.0 adoption in the context of food and beverage industries of Bangladesh</a><br>
+    <em>Benchmarking Journal, 2024</em>
+  </div>
+  <div class="research-item">
+    <strong>3.</strong> Industry 4.0-Enabled SMED for Pipe Extrusion Efficiency<br>
+    <em>7th IEOM Bangladesh Conference, 2024</em>
+  </div>
+  <div class="research-item">
+    <strong>4.</strong> Drivers & Barriers to Green Supply Chain in Construction<br>
+    <em>ICMERE Conference, 2023</em>
+  </div>
+  <div class="research-item">
+    <strong>5.</strong> Improving Supply Chain Effectiveness: Bangladesh Pharma<br>
+    <em>Submitted to Supply Chain Analytics, 2025</em>
+  </div>
+</section>
+
+<section id="education" class="section">
+  <h2>Education</h2>
+  <p><strong>BSc in Industrial and Production Engineering</strong><br>
+  Jashore University of Science and Technology, 2018–2023<br>
+  Thesis: Barriers to TQM implementation in SMEs in Bangladesh: An interpretive structural modeling approach</p>
+</section>
+
+<section id="experience" class="section">
+  <h2>Work Experience</h2>
+  <ul>
+    <li><strong>Assistant Officer – Production Planning</strong><br>Square Apparels Limited, July 2023 – Present</li>
+    <li><strong>Executive – Production (Finishing)</strong><br>Akij Plastics Limited (Pipes and Fittings Unit), June 2023 – July 2023</li>
+  </ul>
+</section>
+
+<section id="activities" class="section">
+  <h2>Extracurricular Activities</h2>
+  <ul>
+    <li>Member, Association of IPE, JUST (2018–Present)</li>
+    <li>Anchor & Event Organizer, JUST (2018–2022)</li>
+    <li>Member, Robotic Club, JUST (2019–2021)</li>
+    <li>Member, Bangabandhu Career Club, JUST (2019–2021)</li>
+    <li>Sports Representation (Volleyball, Cricket, Football), JUST (2018–2022)</li>
+    <li>Volunteer, Nobo Utthan Bangladesh (2020–2022)</li>
+  </ul>
+
+  <h2>Honors & Awards</h2>
+  <ul>
+    <li><strong>Key Employee Recognition</strong> – Akij Plastics Limited, January 2025</li>
+    <li>Recognized for exceptional contribution in achieving the company’s highest monthly production record</li>
+  </ul>
+</section>
+
+<section id="contact" class="section">
+  <h2>Contact</h2>
+  <p><strong>Email:</strong> sifatajmeer@gmail.com</p>
+  <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sifat-ajmeer-haque/" target="_blank">linkedin.com/in/sifat-ajmeer-haque</a></p>
+  <p><strong>ResearchGate:</strong> <a href="https://www.researchgate.net/profile/Sifat-Haque-3?ev=hdr_xprf" target="_blank">researchgate.net/profile/Sifat-Haque-3</a></p>
+</section>
+
+<footer>
+  &copy; 2025 Sifat Ajmeer Haque<br>
+  <a href="https://github.com/sifatajmeer" target="_blank">GitHub</a> |
+  <a href="https://www.linkedin.com/in/sifat-ajmeer-haque/" target="_blank">LinkedIn</a> |
+  <a href="https://www.researchgate.net/profile/Sifat-Haque-3?ev=hdr_xprf" target="_blank">ResearchGate</a>
+</footer>
+
+<script>
+  function toggleMenu() {
+    document.getElementById('navLinks').classList.toggle('show');
+  }
+  function toggleDark() {
+    document.body.classList.toggle('dark');
+  }
+</script>
+
+</body>
+</html>
