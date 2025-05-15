@@ -13,6 +13,7 @@
       --text-dark: #f8fafc;
       --accent: #3b82f6;
     }
+
     body {
       font-family: 'Inter', sans-serif;
       margin: 0;
@@ -20,24 +21,29 @@
       color: var(--text-light);
       transition: all 0.3s ease;
     }
+
     body.dark {
       background: var(--bg-dark);
       color: var(--text-dark);
     }
+
     header {
       background: #1e293b;
       color: white;
       text-align: center;
       padding: 2rem 1rem;
     }
+
     header h1 {
       margin: 0;
       font-size: 2.5rem;
     }
+
     header p {
       font-size: 1.1rem;
       color: #cbd5e1;
     }
+
     nav {
       background: #0f172a;
       padding: 0.8rem 1rem;
@@ -46,15 +52,22 @@
       align-items: center;
       flex-wrap: wrap;
     }
+
     .nav-links {
       display: flex;
       gap: 1.5rem;
     }
+
     nav a {
       color: white;
       text-decoration: none;
       font-weight: 600;
     }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
     .menu-toggle {
       display: none;
       font-size: 1.6rem;
@@ -62,6 +75,7 @@
       background: none;
       border: none;
     }
+
     .section {
       max-width: 900px;
       margin: 1rem auto;
@@ -70,33 +84,49 @@
       border-radius: 10px;
       box-shadow: 0 2px 12px rgba(0,0,0,0.05);
     }
+
     body.dark .section {
       background: #1e293b;
     }
+
     h2 {
       color: var(--accent);
       margin-top: 0;
     }
+
     ul {
       padding-left: 1.2rem;
     }
+
     .research-item {
       margin-bottom: 1rem;
     }
+
     .research-item a {
       color: var(--accent);
       text-decoration: none;
     }
+
+    .research-item a:hover {
+      text-decoration: underline;
+    }
+
     footer {
       text-align: center;
       padding: 1.5rem;
       font-size: 0.9rem;
       color: #64748b;
     }
+
     footer a {
       color: var(--accent);
-      margin: 0 0.5rem;
+      text-decoration: none;
     }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
     .dark-toggle {
       background: none;
       border: none;
@@ -104,6 +134,7 @@
       color: white;
       cursor: pointer;
     }
+
     @media (max-width: 600px) {
       .nav-links {
         display: none;
@@ -111,9 +142,11 @@
         width: 100%;
         margin-top: 0.5rem;
       }
+
       .nav-links.show {
         display: flex;
       }
+
       .menu-toggle {
         display: block;
       }
@@ -147,7 +180,7 @@
 
 <section id="research" class="section">
   <h2>Research & Publications</h2>
-  <p><strong>Total Publications:</strong> 5<br><strong>Total Citations:</strong> 6</p>
+  <p><strong>Total Publications:</strong> 4<br><strong>Total Citations:</strong> 6</p>
   <div class="research-item">
     <strong>1.</strong> <a href="https://doi.org/10.1108/TQM-08-2023-0247" target="_blank">Barriers to TQM Implementation in SMEs in Bangladesh</a><br>
     <em>The TQM Journal, 2023</em>
@@ -157,16 +190,16 @@
     <em>Benchmarking Journal, 2024</em>
   </div>
   <div class="research-item">
-    <strong>3.</strong> Industry 4.0-Enabled SMED for Pipe Extrusion Efficiency<br>
+    <strong>3.</strong> <a href="https://dx.doi.org/10.46254/BA07.20240193" target="_blank">Industry 4.0-Enabled SMED Implementation for Improving Pipe Extrusion Efficiency: A Case Study</a><br>
     <em>7th IEOM Bangladesh Conference, 2024</em>
   </div>
   <div class="research-item">
-    <strong>4.</strong> Drivers & Barriers to Green Supply Chain in Construction<br>
+    <strong>4.</strong> A HIERARCHICAL FRAMEWORK FOR ASSESSING THE DRIVERS AND BARRIERS TO IMPLEMENTING GREEN SUPPLY CHAIN MANAGEMENT IN THE CONSTRUCTION SECTOR OF BANGLADESH<br>
     <em>ICMERE Conference, 2023</em>
   </div>
   <div class="research-item">
-    <strong>5.</strong> Improving Supply Chain Effectiveness: Bangladesh Pharma<br>
-    <em>Submitted to Supply Chain Analytics, 2025</em>
+    <strong>5.</strong>  Improving Supply Chain Effectiveness: An Analysis of Bangladesh’s Pharmaceutical Industry<br>
+    <em>Submitted to Supply Chain Analytics Journal, 2025</em>
   </div>
 </section>
 
@@ -180,8 +213,8 @@
 <section id="experience" class="section">
   <h2>Work Experience</h2>
   <ul>
-    <li><strong>Assistant Officer – Production Planning</strong><br>Square Apparels Limited, July 2023 – Present</li>
-    <li><strong>Executive – Production (Finishing)</strong><br>Akij Plastics Limited (Pipes and Fittings Unit), June 2023 – July 2023</li>
+    <li><strong>Assistant Officer – Production Planning</strong><br>Akij Plastics Limited (Pipes and Fittings Unit), July 2023 – Present</li>
+    <li><strong>Executive – Production (Finishing)</strong><br>Square Apparels Limited, June 2023 – July 2023</li>
   </ul>
 </section>
 
